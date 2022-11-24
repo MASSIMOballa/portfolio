@@ -1,0 +1,36 @@
+body{
+  background-color: #FFEAE4;
+  background-image: 
+}
+
+nav{
+position: fixed;
+bottom: 0%;
+z-index: 10;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+width: 100%;
+font-size: 50px;
+background-color: black;
+height: 10%;
+}
+
+.images{
+  padding-bottom: : ;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+
+
+
+}
+
+.images img{
+  padding-top: 20%;
+  display: flex;
+  width:50%;
+}
