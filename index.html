@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
-    <meta name="viewport:" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   </head>
   <header>
   </header>
@@ -12,26 +15,53 @@
 
   <body>
     <section>
-      <nav>
-        <a href="#">Accueil</a>
-        <a href="#">Competences</a>
-        <a href="#">Expériences</a>
-        <a href="#">Contact</a>
-      </nav>
+      <!-- <nav> -->
+      <div id="accueil" class="tabcontent">
+        <h1>Bienvenue sur mon CV en ligne</h1>
+        <img src="https://img.freepik.com/photos-premium/portrait-homme-souriant-montrant-signe-ok_23-2148666495.jpg?w=2000" alt="homme souriant">
+
+      </div>
+      <div id="skills" class="tabcontent">
+      </div>
+      <div id="exp" class="tabcontent">
+      </div>
+      <div id="dlcv" class="tabcontent">
+        <h2>Téléchargement</h2>
+      </div>
+      <!-- <div id="" class="tabcontent">
+        <button type="button" name="button">
+        <a href="#"> <img src="img/tel.png" alt="contact"> </a>
+        </button>
+      </div> -->
+      <button class="tablink" onclick="openCity('accueil', this, '#F6B112')" id="defaultOpen">
+        <img src="img/accueil.png" alt="acceuil">
+      </button>
+      <button class="tablink" onclick="openCity('skills', this, 'green')">
+        <img src="img/acrobat.png" alt="cv">
+      </button>
+      <button class="tablink" onclick="openCity('exp', this, 'blue')">
+        <img src="img/xp.png" alt="exp">
+      </button>
+      <button class="tablink" onclick="openCity('dlcv', this, 'orange')">
+        <img src="img/cv.png" alt="competences">
+      </button>
+      <!-- </nav> -->
     </section>
 
-    <section>
+    <!-- <section id="set1">
       <div class="images">
-        <img src="img/france.png" alt="Drapeau de la France">
         <img src="img/bresil.png" alt="Drapeau du Bresil">
+        <img src="img/cvpapier.png" alt="cv">
         <img src="img/croatie.png" alt="Drapeau de la Croatie">
         <img src="img/espagne.png" alt="Drapeau de l'Espagne">
         <img src="img/japon.png" alt="Drapeau du Japon">
         <img src="img/portugal.png" alt="Drapeau du Portugal">
       </div>
-    </section>
+    </section> -->
 
 
-    </div>
+
+
+    <script src="javascript/script-tab.js" charset="utf-8"></script>
   </body>
 </html>
