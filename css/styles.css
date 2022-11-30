@@ -135,7 +135,7 @@ label:focus {
   left: 0;
   background: #f6e7d8;
   width: 60px;
-  height: 50%;
+  height: 240px;
   transform: translate3d(-60px, 0, 0);
   transition: transform 0.35s;
 }
