@@ -10,7 +10,7 @@ section{
   height: 100vh
 }
 
-section div{
+section>div{
   height: 90vh;
 }
 section button{
@@ -63,16 +63,27 @@ button{
 
 }
 
+#accueil{
+  display: block;
+  background: url("https://img.freepik.com/photos-premium/portrait-homme-souriant-montrant-signe-ok_23-2148666495.jpg?w=2000")
+
+}
+
+
 h1{
+  display: block;
   font-family: 'Open Sans', sans-serif;
-
+  font-size: 2rem;
+  text-align: center;
+  z-index: 1;
 }
+
 #accueil img{
-  display: flex;
-  justify-content: flex-start;
-  width: 100%
-
+width: 100%;
 }
+
+
+
 /* Style the tab buttons */
 .tablink {
   background-color: #555;
@@ -91,4 +102,91 @@ h1{
   display: flex;
   width:80%;
 
+}
+
+
+
+
+
+
+/* test */
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+
+label {
+  cursor: pointer;
+}
+label:focus {
+  outline: none;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  width: 240px;
+  height: 100%;
+  transform: translate3d(-240px, 0, 0);
+  transition: transform 0.35s;
+}
+.menu label.menu-toggle {
+  position: absolute;
+  right: -60px;
+  width: 60px;
+  height: 60px;
+  line-height: 0px;
+  display: block;
+  padding: 0;
+  text-indent: -9999px;
+  background: #fff url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50%/25px 25px no-repeat;
+}
+
+.menu ul li a, .menu ul li label {
+  display: block;
+  text-align: center;
+  padding: 0 20px;
+  line-height: 60px;
+  text-decoration: none;
+  color: #000;
+}
+.menu ul li a:hover, .menu ul li label:hover {
+  color: #666;
+}
+
+/* hide inputs */
+.menu-checkbox {
+  display: none;
+}
+
+/* hide navigation icon for sublabels */
+.menu .menu label.menu-toggle {
+  background: none;
+}
+
+/* fade in checked menu */
+.menu-checkbox:checked + .menu {
+  transform: translate3d(0, 0, 0);
+}
+
+/* for show */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: url(https://37.media.tumblr.com/f6c67ec2821a91051e4175f8a102e1e2/tumblr_n6rzpcsMk41st5lhmo1_1280.jpg) 50% 50%/cover;
+}
+
+p {
+  margin-bottom: 15px;
 }
