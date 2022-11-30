@@ -79,7 +79,7 @@ h1{
 }
 
 #accueil img{
-width: 100%;
+;
 }
 
 
@@ -131,16 +131,17 @@ label:focus {
 
 .menu {
   position: absolute;
-  top: 0;
+  top: 10%;
   left: 0;
-  background: #fff;
-  width: 240px;
-  height: 100%;
-  transform: translate3d(-240px, 0, 0);
+  background: #f6e7d8;
+  width: 60px;
+  height: 50%;
+  transform: translate3d(-60px, 0, 0);
   transition: transform 0.35s;
 }
 .menu label.menu-toggle {
   position: absolute;
+  top: 0%;
   right: -60px;
   width: 60px;
   height: 60px;
@@ -148,7 +149,12 @@ label:focus {
   display: block;
   padding: 0;
   text-indent: -9999px;
-  background: #fff url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50%/25px 25px no-repeat;
+  background: #f6e7d8 url(../img/contact.png) 50% 50%/30px 30px no-repeat;
+}
+
+@font-face {
+  font-family: 'opensansbold';
+  src:url("../font/static/OpenSans/OpenSans-bold.ttf") format("truetype")
 }
 
 .menu ul li a, .menu ul li label {
@@ -158,9 +164,11 @@ label:focus {
   line-height: 60px;
   text-decoration: none;
   color: #000;
+  font-family: 'opensansbold';
 }
+
 .menu ul li a:hover, .menu ul li label:hover {
-  color: #666;
+  color: white;
 }
 
 /* hide inputs */
@@ -183,9 +191,7 @@ html, body {
   height: 100%;
 }
 
-body {
-  background: url(https://37.media.tumblr.com/f6c67ec2821a91051e4175f8a102e1e2/tumblr_n6rzpcsMk41st5lhmo1_1280.jpg) 50% 50%/cover;
-}
+
 
 p {
   margin-bottom: 15px;
