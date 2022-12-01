@@ -63,10 +63,23 @@ button{
 
 }
 
-#accueil{
-  display: block;
-  background: url("https://img.freepik.com/photos-premium/portrait-homme-souriant-montrant-signe-ok_23-2148666495.jpg?w=2000")
 
+#accueil{
+  background-color: #abbb84;
+  display: block;
+  /* background: url("https://img.freepik.com/photos-premium/portrait-homme-souriant-montrant-signe-ok_23-2148666495.jpg?w=2000"); */
+}
+
+#skills{
+background-color: #6d888f;
+}
+
+#exp{
+  background-color: #51452f;
+}
+
+#dlcv{
+  background-color: #435a9e;
 }
 
 
@@ -77,11 +90,6 @@ h1{
   text-align: center;
   z-index: 1;
 }
-
-#accueil img{
-;
-}
-
 
 
 /* Style the tab buttons */
@@ -148,8 +156,22 @@ label:focus {
   line-height: 0px;
   display: block;
   padding: 0;
-  text-indent: -9999px;
-  background: #f6e7d8 url(../img/contact.png) 50% 50%/30px 30px no-repeat;
+  background: #f6e7d8
+}
+
+label i{
+  width: 30px;
+  height: 30px;
+  width: 100%;
+}
+
+#carnet{
+  width: 30px;
+  height: 30px;
+}
+
+label i:hover {
+  color: white;
 }
 
 @font-face {
@@ -191,7 +213,10 @@ html, body {
   height: 100%;
 }
 
-
+/* couleurs background */
+#exp{
+ background-Color: "#435a9e";
+ }
 
 p {
   margin-bottom: 15px;
