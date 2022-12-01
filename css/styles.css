@@ -62,7 +62,8 @@ button{
   justify-content: flex-start;
 
 }
-
+/* h1{ */
+  /* color: #f6e7d8; */
 
 #accueil{
   background-color: #abbb84;
@@ -89,6 +90,11 @@ h1{
   font-size: 2rem;
   text-align: center;
   z-index: 1;
+}
+
+.text{
+
+  top: 25%;
 }
 
 
@@ -145,7 +151,7 @@ label:focus {
 
 .menu {
   position: absolute;
-  top: 0%;
+  top: 13%;
   left: 0;
   background: #f6e7d8;
   width: 60px;
@@ -162,18 +168,13 @@ label:focus {
   line-height: 0px;
   display: block;
   padding: 0;
-  background: #f6e7d8
+  background:#f6e7d8 url(../img/contact.png) 50% 50% / 30px 30px  no-repeat ;
 }
 
 label i{
   width: 30px;
   height: 30px;
   width: 100%;
-}
-
-#carnet{
-  width: 30px;
-  height: 30px;
 }
 
 label i:hover {
