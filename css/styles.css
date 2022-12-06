@@ -172,6 +172,14 @@ label:focus {
   background:#f6e7d8 url(../img/contact2.png) 50% 50% / 50px 50px  no-repeat ;
 }
 
+.menu label.menu-toggle:hover{
+background-color: white;
+-webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+
+}
+
 .menu-toggle{
   z-index: 1000;
 }
