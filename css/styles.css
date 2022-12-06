@@ -42,7 +42,7 @@ height: 15%;
   box-sizing: border-box;
   text-align: center;
 }
-nav button:hover{
+nav img:hover{
     -webkit-transform: scale(1.3);
     -ms-transform: scale(1.3);
     transform: scale(1.3);
