@@ -169,7 +169,7 @@ label:focus {
   line-height: 0px;
   display: block;
   padding: 0;
-  background:#f6e7d8 url(../img/contact.png) 50% 50% / 30px 30px  no-repeat ;
+  background:#f6e7d8 url(../img/contact2.png) 50% 50% / 50px 50px  no-repeat ;
 }
 
 .menu-toggle{
@@ -321,10 +321,10 @@ ol, li {
   z-index: 2;
   position: relative;
   top: 2rem;
-  padding-top: 130%;
   width: 90%;
   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
+  height: 75vh
 }
 
 .carousel__snapper{
@@ -442,15 +442,13 @@ line-height: 1,2rem;
 .carousel__prev,
 .carousel__next {
   position: absolute;
-
-  top: 22rem;
-  margin-top: 0%;
-  width: 4rem;
-  height: 4rem;
-  transform: translateY(25%);
-  font-size: 0;
-  outline: 0;
-  opacity: ;
+bottom: 0;
+margin-bottom: 61px;
+width: 4rem;
+height: 4rem;
+transform: translateY(25%);
+font-size: 0;
+outline: 0;
 }
 
 .carousel::before,
@@ -484,4 +482,13 @@ line-height: 1,2rem;
 
 .carousel::after {
   background-image: url('file:///C:/Users/PC10/Downloads/right.svg');
+}
+
+
+nav{
+  position: fixed;
+    bottom: 0;
+    z-index: 220;
+    width: 100%;
+}
 }
