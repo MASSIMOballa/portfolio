@@ -150,8 +150,9 @@ label:focus {
 }
 
 .menu {
+  z-index: 3;
   position: absolute;
-  top: 13%;
+  top: 10%;
   left: 0;
   background: #f6e7d8;
   width: 60px;
@@ -170,6 +171,11 @@ label:focus {
   padding: 0;
   background:#f6e7d8 url(../img/contact.png) 50% 50% / 30px 30px  no-repeat ;
 }
+
+.menu-toggle{
+  z-index: 1000;
+}
+
 
 label i{
   width: 30px;
@@ -312,12 +318,29 @@ ol, li {
 }
 
 .carousel {
+  z-index: 2;
   position: relative;
   top: 2rem;
   padding-top: 130%;
   width: 90%;
   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
+}
+
+.carousel__snapper{
+padding-left: 8%;
+padding-right: 8%;
+padding-top: 10%;
+padding-bottom: 10%;
+display: flex;
+flex-direction: column;
+justify-content:space-between;
+line-height: 1,2rem;
+}
+
+
+#explication{
+  text-align: left;
 }
 
 .carousel__viewport {
@@ -328,7 +351,7 @@ ol, li {
   left: 0;
   display: flex;
   overflow-x: scroll;
-  counter-reset: item;
+  /* counter-reset: item; */
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
 }
@@ -337,16 +360,17 @@ ol, li {
   position: relative;
   flex: 0 0 100%;
   width: 100%;
-  background-color: #f99;
-  counter-increment: item;
+  background-color: #555555;
+  /* counter-increment: item; */
+
 }
 
 .carousel__slide:nth-child(even) {
-  background-color: #99f;
+  background-color: #555555;
 }
 
 .carousel__slide:before {
-  content: counter(item);
+  /* content: counter(item); */
   position: absolute;
   bottom:0%;
   left: 50%;
@@ -388,10 +412,6 @@ ol, li {
   animation-name: none;
 }
 
-.carousel__snapper p{
-
-}
-
 .carousel__navigation {
   position: absolute;
   right: 0;
@@ -422,15 +442,15 @@ ol, li {
 .carousel__prev,
 .carousel__next {
   position: absolute;
-  top: 11rem;
+
+  top: 22rem;
   margin-top: 0%;
   width: 4rem;
   height: 4rem;
   transform: translateY(25%);
-  border-radius: 40%;
   font-size: 0;
   outline: 0;
-  opacity: 0.1;
+  opacity: ;
 }
 
 .carousel::before,
@@ -441,7 +461,6 @@ ol, li {
 .carousel::after,
 .carousel__next {
   right: -0%;
-
 }
 
 .carousel::before,
