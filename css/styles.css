@@ -400,7 +400,7 @@ line-height: 1,2rem;
   .carousel__snapper {
     animation-name: tonext, snap;
     animation-timing-function: ease;
-    animation-duration: 4s;
+    /* animation-duration: 4s; */
     animation-iteration-count: infinite;
   }
 
@@ -430,11 +430,12 @@ line-height: 1,2rem;
 
 .carousel__navigation-list,
 .carousel__navigation-item {
-  display: inline-block;
+  display: block;
+  /* z-index: -1; */
 }
 
 .carousel__navigation-button {
-  display: inline-block;
+  display: block;
   width: 1.5rem;
   height: 1.5rem;
   background-color: #333;
@@ -443,6 +444,7 @@ line-height: 1,2rem;
   border-radius: 50%;
   font-size: 0;
   transition: transform 0.1s;
+  /* z-index: -1; */
 }
 
 .carousel::before,
