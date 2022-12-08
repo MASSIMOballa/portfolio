@@ -517,36 +517,35 @@ nav{
 
 /* soft skills hard skill  */
 .pokemon {
-  width: 200px;
-  height: 200px;
+
   /* center content using flex box */
   display: flex;
+
   justify-content: center;
   align-items: center;
   /* overlay */
-  box-shadow: 0 0 0 100px inset, 0 0 5px grey;
+  box-shadow: 0 0 0 250px inset, 0 0 5px grey;
   /* hover out transition */
   transition: box-shadow 1s;
   float: left;
-  margin: 10px;
+
+  /* margin: 10px; */
 }
 
 
 /* pokemone names */
 
 .pokemon::after {
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   display: block;
   white-space: pre;
-  font: 15pt 'sigmar one';
+
   color: white;
   border: 2px solid;
   text-align: center;
   /* center content using flex box */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   /* hover out transition */
   transition: opacity 1s .5s;
 }
@@ -567,44 +566,55 @@ nav{
   transition: opacity .5s;
 }
 
-#bulbasaur {
+#softskill {
   background-image: url(http://vignette4.wikia.nocookie.net/pokemon/images/2/21/001Bulbasaur.png/revision/latest/scale-to-width-down/200?cb=20140328190757);
   color: rgba(71, 121, 94, .9);
+  width: 50%;
+  height: 50%;
+
+
 }
 
-#bulbasaur::after {
-  content: 'Bulbasaur';
+#softskill::after {
+  content: 'Soft skills';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+
 }
 
-#charmander {
-  background-image: url(http://vignette2.wikia.nocookie.net/pokemon/images/7/73/004Charmander.png/revision/latest/scale-to-width-down/200?cb=20140724195345);
-  color: rgba(221, 86, 63, .9);
-}
-
-#charmander::after {
-  content: 'Charmander'
-}
-
-#squirtle {
+#hardskill {
   background-image: url(http://vignette2.wikia.nocookie.net/pokemon/images/3/39/007Squirtle.png/revision/latest/scale-to-width-down/200?cb=20140328191525);
   color: rgba(65, 102, 114, .9);
+  width: 50%;
+  height: 50%;
+
 }
 
-#squirtle::after {
-  content: 'Squirtle'
+#hardskill::after {
+  content: 'Hard skills';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 
-#pikachu {
-  background-image: url(http://vignette2.wikia.nocookie.net/pokemon/images/0/0d/025Pikachu.png/revision/latest/scale-to-width-down/200?cb=20140328192412);
-  color: rgba(179, 152, 98, .9);
-}
 
-#pikachu::after {
-  content: 'Pikachu'
-}
 
 #wrapper {
-  width: 500px;
-  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 90%;
   margin:  auto;
 }
+
+
+
+
+.pokemon p {
+  position: absolute;
+  color:white;
