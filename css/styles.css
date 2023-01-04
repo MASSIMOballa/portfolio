@@ -487,11 +487,11 @@ outline: 0;
 }
 
 .carousel::before {
-  background-image: url('file:///C:/Users/PC10/Downloads/left.svg')
+  background-image: url('../img/fleched.png');
 }
 
 .carousel::after {
-  background-image: url('file:///C:/Users/PC10/Downloads/right.svg');
+  background-image: url('../img/flecheg.png');
 }
 
 .carousel__next , .carousel__prev{
@@ -567,8 +567,11 @@ nav{
 }
 
 #softskill {
-  background-image: url(http://vignette4.wikia.nocookie.net/pokemon/images/2/21/001Bulbasaur.png/revision/latest/scale-to-width-down/200?cb=20140328190757);
-  color: rgba(71, 121, 94, .9);
+  background-image: url("../img/softskill.png");
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgba(71, 121, 94, 100);
   width: 50%;
   height: 50%;
 
@@ -585,8 +588,13 @@ nav{
 }
 
 #hardskill {
-  background-image: url(http://vignette2.wikia.nocookie.net/pokemon/images/3/39/007Squirtle.png/revision/latest/scale-to-width-down/200?cb=20140328191525);
-  color: rgba(65, 102, 114, .9);
+  /* background-image: url('https://learn.handigital-formation.com/app/uploads/2021/01/html5.jpg')  ; */
+  background-image: url("../img/hardskill.png");
+  background-size: 40% ;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: rgba(65, 102, 114, 100);
   width: 50%;
   height: 50%;
 
@@ -614,7 +622,12 @@ nav{
 
 
 
+/* CSS button dl */
 
-.pokemon p {
-  position: absolute;
-  color:white;
+#pdf {
+position: absolute;
+width: 30%;
+
+top: 39%;
+left: 36%;
+}
