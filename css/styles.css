@@ -31,9 +31,14 @@ height: 15%;
 } */
 /* Style each tab content individually */
 #accueil {background-color:#F6B112;}
+
 #skills {background-color:green;}
 #exp {background-color:blue;}
-#dlcv {background-color:orange;}
+
+#dlcv {background-color:orange;
+background-image: url('../img/papierpeint.png');
+background-position: center;
+}
 
 .tabcontent {
   color: white;
@@ -80,7 +85,8 @@ background-color: #6d888f;
 }
 
 #dlcv{
-  background-color: #435a9e;
+  background-color: #004069;
+
 }
 
 
@@ -332,7 +338,8 @@ ol, li {
   width: 90%;
   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
-  height: 75vh
+  height: 75vh;
+  border-radius: 3px;
 }
 
 .carousel__snapper{
@@ -362,6 +369,7 @@ line-height: 1,2rem;
   /* counter-reset: item; */
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
+  border-radius: 5px;
 }
 
 .carousel__slide {
@@ -625,9 +633,64 @@ nav{
 /* CSS button dl */
 
 #pdf {
+z-index: 0;
 position: absolute;
-width: 30%;
+width: 40%;
+border-radius: 100px;
+top: 37%;
+left: 31%;
+  -webkit-animation: sonar-effect 5s ease-in-out 1s infinite;
 
-top: 39%;
-left: 36%;
+}
+
+#pdf:hover{
+  /* -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); */
+  -webkit-animation: sonar-effect 5s ease-in-out 1s infinite;
+
+
+
+}
+
+@keyframes sonar-effect {
+  0% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.5;
+    box-shadow: 0 0 0 5px #fff, 0 0 10px 10px #fff, 0 0 0 10px #fff;
+  }
+  100% {
+    box-shadow: 0 0 0 5px #fff, 0 0 10px 10px #fff, 0 0 0 10px #fff;
+    opacity: 0;
+  }
+}
+
+
+#pdf2:active{
+
+  transform: scale(0.8);
+}
+
+#pdf2{
+  position: absolute;
+  width: 30%;
+  top: 39%;
+  left: 36%;
+  z-index: 10;
+}
+
+h4{
+  position: absolute;
+  font-size: 2em;
+  top: 23%;
+  left: 20%;
+}
+
+#papier{
+  position:absolute;
+  top: 30%;
+  left: 27%;
+  font-size: 1.5em;
 }
