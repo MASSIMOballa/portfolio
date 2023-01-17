@@ -30,14 +30,34 @@ height: 15%;
 
 } */
 /* Style each tab content individually */
-#accueil {background-color:#F6B112;}
+#accueil {background-color:#F6B112;
+  background-image: url('../img/papierpeint1.png');
+  background-position: center;
+  background-repeat: no-repeat;
 
-#skills {background-color:green;}
-#exp {background-color:blue;}
+}
+
+#skills {background-color:green;
+background-image: url('../img/papierpeint2.jpg') ;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
+}
+
+
+#exp {
+background-image: url('../img/papierpeint2.jpg');
+}
+
 
 #dlcv {background-color:orange;
 background-image: url('../img/papierpeint.png');
 background-position: center;
+}
+
+.color{
+  color: #3f2727;
 }
 
 .tabcontent {
@@ -376,13 +396,14 @@ line-height: 1,2rem;
   position: relative;
   flex: 0 0 100%;
   width: 100%;
-  background-color: #555555;
+  background-color: rgba(85,85,85,0.8);
+
   /* counter-increment: item; */
 
 }
 
 .carousel__slide:nth-child(even) {
-  background-color: #555555;
+background-color: rgba(85,85,85,0.8);
 }
 
 .carousel__slide:before {
@@ -578,7 +599,7 @@ nav{
   background-image: url("../img/softskill.png");
   background-size: 40%;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
   color: rgba(71, 121, 94, 100);
   width: 50%;
   height: 50%;
@@ -693,4 +714,11 @@ h4{
   top: 30%;
   left: 27%;
   font-size: 1.5em;
+}
+
+#lien{
+  position: absolute;
+  z-index: 9999999;
+  top: 50%;
+  left: 50%;
 }
