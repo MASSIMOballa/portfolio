@@ -599,8 +599,8 @@ nav{
   background-image: url("../img/softskill.png");
   background-size: 40%;
   background-position: center;
-  background-repeat: no-repeat; 
-  color: rgba(71, 121, 94, 100);
+  background-repeat: no-repeat;
+  color: #47795E;
   width: 50%;
   height: 50%;
 
@@ -618,12 +618,11 @@ nav{
 
 #hardskill {
   /* background-image: url('https://learn.handigital-formation.com/app/uploads/2021/01/html5.jpg')  ; */
-  background-image: url("../img/hardskill.png");
+  background-image: url("../img/htmlcssjs.png");
   background-size: 40% ;
   background-position: center;
   background-repeat: no-repeat;
-
-  color: rgba(65, 102, 114, 100);
+  color:#136489;
   width: 50%;
   height: 50%;
 
