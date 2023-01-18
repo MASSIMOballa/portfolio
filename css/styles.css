@@ -39,7 +39,7 @@ height: 15%;
 
 #skills {background-color:green;
 background-image: url('../img/papierpeint2.jpg') ;
-background-size: cover;
+background-size: 100vh;
 background-repeat: no-repeat;
 background-position: center;
 
@@ -47,7 +47,9 @@ background-position: center;
 
 
 #exp {
-background-image: url('../img/papierpeint2.jpg');
+background-image: url('../img/jungle.jpg');
+background-size: cover;
+background-position: no-repeat;
 }
 
 
@@ -597,11 +599,11 @@ nav{
 
 #softskill {
   background-image: url("../img/softskill.png");
-  background-size: 40%;
+  background-size: 55%;
   background-position: center;
   background-repeat: no-repeat;
   color: #47795E;
-  width: 50%;
+  width: 62%;
   height: 50%;
 
 
@@ -618,12 +620,12 @@ nav{
 
 #hardskill {
   /* background-image: url('https://learn.handigital-formation.com/app/uploads/2021/01/html5.jpg')  ; */
-  background-image: url("../img/htmlcssjs.png");
-  background-size: 40% ;
+  background-image: url("../img/hardskill.png");
+  background-size: 75% ;
   background-position: center;
   background-repeat: no-repeat;
   color:#136489;
-  width: 50%;
+  width: 62%;
   height: 50%;
 
 }
@@ -720,4 +722,25 @@ h4{
   z-index: 9999999;
   top: 50%;
   left: 50%;
+}
+
+.textexp {
+  position: absolute;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  top: 11%;
+  left: 9%;
+  height: 70%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.textexp p {
+  text-align: left;
+  text-indent: 13px;
+  padding: 5%;
+  line-height: 25px;
+  font-size: 1.3rem;
 }
