@@ -47,15 +47,16 @@ background-position: center;
 
 
 #exp {
-background-image: url('../img/jungle.jpg');
+background-image: url('../img/jungle.png');
 background-size: cover;
 background-position: no-repeat;
 }
 
 
 #dlcv {background-color:orange;
-background-image: url('../img/papierpeint.png');
+background-image: url('../img/cascade.jpg');
 background-position: center;
+background-size:cover;
 }
 
 .color{
