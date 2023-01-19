@@ -50,6 +50,7 @@ background-position: center;
 background-image: url('../img/jungle.png');
 background-size: cover;
 background-position: no-repeat;
+
 }
 
 
@@ -600,7 +601,7 @@ nav{
 
 #softskill {
   background-image: url("../img/softskill.png");
-  background-size: 55%;
+  background-size: 82%;
   background-position: center;
   background-repeat: no-repeat;
   color: #47795E;
@@ -662,7 +663,7 @@ width: 40%;
 border-radius: 100px;
 top: 37%;
 left: 31%;
-  -webkit-animation: sonar-effect 5s ease-in-out 1s infinite;
+  -webkit-animation: sonar-effect 4s ease-in-out 0.5s infinite;
 
 }
 
@@ -670,23 +671,23 @@ left: 31%;
   /* -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1); */
-  -webkit-animation: sonar-effect 5s ease-in-out 1s infinite;
+  -webkit-animation: sonar-effect 4s ease-in-out 0.5s infinite;
 
 
 
 }
 
 @keyframes sonar-effect {
-  0% {
-    opacity: 0.3;
+  10% {
+    opacity: 0.4;
   }
   40% {
-    opacity: 0.5;
+    opacity: 0.8;
     box-shadow: 0 0 0 5px #fff, 0 0 10px 10px #fff, 0 0 0 10px #fff;
   }
   100% {
     box-shadow: 0 0 0 5px #fff, 0 0 10px 10px #fff, 0 0 0 10px #fff;
-    opacity: 0;
+    opacity: 0.1;
   }
 }
 
@@ -736,7 +737,7 @@ h4{
   width: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 .textexp p {
   text-align: left;
@@ -744,4 +745,96 @@ h4{
   padding: 5%;
   line-height:;
   font-size: 1.2rem;
+}
+
+@media screen and (min-width:740px){
+
+/* accueil fini */
+  .carousel {
+    z-index: 2;
+    position: relative;
+    top: 8rem;
+    width: 26%;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+    height: 70vh;
+    border-radius: 3px;
+  }
+
+  .color{
+    position: absolute;
+    display: block;
+    position: ;
+    color: #3f2727;
+    top: 5%;
+    left: 44%;
+  }
+
+/* skillsfini */
+#softskill {
+  background-image: url("../img/softskillmedia.png");
+  background-size: 63%;
+  width: 50%;
+}
+#hardskill {
+  width: 50%;
+  background-image: url("../img/hardskillmedia.png");
+  background-size: 63%;
+}
+
+/* experience */
+#exp {
+background-image: url('../img/expmedia.jpg');
+background-size: 82%;
+background-position: no-repeat;
+
+}
+
+.textexp {
+  position: absolute;
+  /* display: block; */
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  top: 26%;
+  left: 35%;
+  height: 44vh;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+/* telechargement */
+#pdf2{
+  position: absolute;
+  width: 20%;
+  top: 25%;
+  left: 40%;
+  z-index: 10;
+}
+
+#pdf {
+z-index: 0;
+position: absolute;
+width: 27%;
+border-radius: 300px;
+top: 18%;
+left: 36%;
+}
+
+h4{
+  position: absolute;
+  font-size: 2em;
+  top: 11%;
+  left: 44%;
+}
+
+#papier{
+  position:absolute;
+  top: 76%;
+  left: 46%;
+  font-size: 1.5em;
+}
+
 }
